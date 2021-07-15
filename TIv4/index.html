@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+     crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>TRABAJO INTEGRAL: HOJA DE RUTA</title>
+    <script src="main.js" type="module"></script>
+</head>
+
+<body>
+    <div className="container">
+        <table width="100%" border="0" align="center">
+            <thead>
+                <tr>
+                    <td width="100%" height="56" align="center">
+                            <h1>TRABAJO INTEGRAL: HOJA DE RUTA</h1>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                            <div className="container" widht="100%">
+                                    <h2>HOJA DE RUTA</h2>
+                                    <hr>
+                            </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top" class="p-3 mb-2 bg-secondary text-white border border-secondary" height="100">
+                        <div class="container-fluid">
+                            <h3>INSTRUCCIONES</h3>
+                            <h5>1. INGRESO DE DATOS GENERALES</h5>
+                                <p>Sube el archivo (.txt) con los datos generales presionando el boton "Seleccionar Archivo" que se 
+                                    encuentra bajo el titulo DATOS GENERALES</p>
+                            <h5>2. INGRESO DE DATOS DEMANDA DE PRODUCTOS DEL DÍA</h5>
+                                <p>Sube el archivo (.txt) con los datos de demanda de productos del día presionando el boton "Seleccionar Archivo" que se 
+                                    encuentra bajo el titulo DATOS DEMANDA DE PRODUCTOS DEL DÍA</p>
+                            <h5>3. FINALIZAR</h5>
+                                <p>Una vez subidos ambos archivos, presiona el boton Finalizar</p>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+
+                        <div>
+                            <div class="row">
+                                <div class="col">
+                                    <h2>DATOS GENERALES</h2>
+                                    <input type="file" id="datosgen"/>
+                                    <h3>Contenido del archivo:</h3>
+                                    <pre id="contenido-archivogen"></pre>
+                                    <br/>
+                                    
+                                </div>
+                                <div class="col">
+                                    <h2>DATOS DEMANDA DE PRODUCTOS DEL DÍA</h2>
+                                    <input type="file" id="datoscpn" />
+                                    <h3>Contenido del archivo:</h3>
+                                    <pre id="contenido-archivocpn"></pre>
+                                    <br/>
+                                </div>
+                            </div>
+                                <div class="row">
+                                    <div class="col"> </div>
+                                        <div class="col box" align="center">
+                                            <div class="form-group">
+                                                Centro de Distribución o Punto de venta <select id="cop" class="form-control">
+                                                    <option value="C">Centro de Distribución</option>
+                                                    <option value="P">Punto de venta</option>
+                                                </select>
+                                            </div>
+                                            <br/>
+                                            <div class="form-group">
+                                                Coordenadas: <input id="coord" type="text" class="form-control"/>
+                                            </div>
+                                            <br/>
+                                            <div class="form-group">
+                                                <button class="btn btn-primary" type="button" id="agregar"> Agregar </button>
+                                            </div>
+                                            <br/>
+                                        </div>
+                                    <div class="col"> </div>
+                                </div>
+                            
+                                <div>
+                                    <center>
+                                        <br/>
+                                        <button class="btn btn-primary" type="button" id="finalizar"> Finalizar </button>
+                                    </center>
+                                </div>
+                            <br/>
+                        </div>
+                  </td>
+                </tr>
+            </thead>
+        </table>
+    </div> 
+<div class="terminal">
+    <h3>Consola</h3>
+</div>
+
+</body>
+</html>
