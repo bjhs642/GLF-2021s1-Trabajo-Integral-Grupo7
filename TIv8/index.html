@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Rutas</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">
+<!-- Load css styles -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/ruta.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="css/ruta-ie7.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="images/ico/favicon.ico">
+<script src="js/main.js" type="module"></script>
+</head>
+<body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <img src="images/logo.png" width="120" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <em class="icon-menu"></em>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="#home">Inicio</a></li>
+                            <li><a href="#instrucciones">Instrucciones</a></li>
+                            <li><a href="#ingreso-d">Ingreso</a></li>
+                        </ul>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Start home section -->
+        <div id="home">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2">Bienvenido a Sistema de Rutas</h2>
+                        <h4>Para todo tipo de Camiones</h4>
+                        <p>para poder optimizar nuestros viajes</p>
+                        <div class="da-img">
+                            <img src="images/Slider01.png" alt="image01" width="320">
+                        </div>
+                    </div>
+                    <!-- End first slide -->
+                    <!-- Start second slide -->
+                    <div class="da-slide">
+                        <h2>Facil de Manejar</h2>
+                        <h4>Facil de Usar</h4>
+                        <p>Con hojas de rutas optimizadas.</p>
+                        <div class="da-img">
+                            <img src="images/Slider02.png" width="320" alt="image02">
+                        </div>
+                    </div>
+                    <!-- End second slide -->
+                    <!-- Start third slide -->
+                    <!-- Start third slide -->
+                    <!-- Start cSlide navigation arrows -->
+                    <div class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </div>
+                    <!-- End cSlide navigation arrows -->
+                </div>
+            </div>
+        </div>
+        <!-- End home section -->
+        <!-- Service section start -->
+        <div class="section primary-section" id="instrucciones">
+            <div class="container">
+                <!-- Start title section -->
+                <div class="title">
+                    <h1>Instrucciones</h1>
+                    <p>Como se debe cargar la Hoja de ruta para nuestros transportes</p>
+                    <!-- Section's title goes here -->
+                    <!--Simple description for section goes here. -->
+                </div>
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service1.png" alt="service 1">
+                            </div>
+                            <h3>Ingreso de Datos</h3>
+                            <p>Sube el archivo (.txt) con los datos generales presionando el boton "Seleccionar Archivo" que se encuentra bajo el titulo DATOS GENERALES</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service2.png" alt="service 2" />
+                            </div>
+                            <h3>Ingreso de Datos Demanda de Productos del Día</h3>
+                            <p>Sube el archivo (.txt) con los datos de demanda de productos del día presionando el boton "Seleccionar Archivo" que se encuentra bajo el titulo DATOS DEMANDA DE PRODUCTOS DEL DÍA</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="images/Service3.png" alt="service 3">
+                            </div>
+                            <h3>Finalizar</h3>
+                            <p>Una vez subidos ambos archivos, presiona el boton Finalizar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service section end -->
+        <!-- Portfolio section start -->
+        <div class="section secondary-section " id="ingreso-d">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class="title">
+                    <h1>Ingreso de Datos</h1>
+                    <p>Datos para las rutas</p>
+                </div>
+                <div class="price-table row-fluid">
+                    <div class="span6 price-column">
+                        <h3>Datos<br>Generales</h3>
+                        <input type="file" id="datosgen" class="button button-ps" />
+                        <ul class="list">
+                            <li><strong>Contenido del archivo:</strong></li>
+                            <li><pre id="contenido-archivogen"></pre></li>
+                        </ul>
+                    </div>
+                    <div class="span6 price-column">
+                        <h3>DATOS DEMANDA DE<br>PRODUCTOS DEL DÍA</h3>
+                        <input type="file" id="datoscpn" class="button button-ps" />
+                        <ul class="list">
+                            <li><strong>Contenido del archivo:</strong></li>
+                            <li><pre id="contenido-archivocpn"></pre></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="centered">
+                    <button class="button" type="button" id="finalizar"> Finalizar </button>
+                </div>
+            </div>
+        </div>
+        <!-- Price section end -->
+       
+        <!-- Contact section start -->
+        <div class="terminal">
+              <h3>Consola</h3>
+        </div>
+
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>&copy; 2021 <a href="#">Sistema de Transportes</a></p>
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <em class="icon-up-open"></em>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
